@@ -24,6 +24,8 @@
 	}
 ?>
 
+<br>
+
 <?php
 
 	//vastavalt vanusele trükime niimitu korda välja sõna ""palju""
@@ -37,4 +39,13 @@
 	}
 	
 	echo "õnne!";
+?>
+
+<br>
+
+<?php
+
+	//Trüki välja kuupäev kujul: nädalapäev, kp, kuu, aasta
+	echo date("l, j F Y e");
+
 ?>
