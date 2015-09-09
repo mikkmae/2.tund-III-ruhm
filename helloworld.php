@@ -8,7 +8,7 @@
 <br>
 <?php
 
-	$age = 19;
+	$age = 5;
 	
 	//testib loogikat jelu, juhul gei vanus on väiksem kui 18 siis kirjuta "alaealine"
 	//muuljuhul "täisealine"
@@ -22,4 +22,19 @@
 		
 			echo "Oled alaealine.";
 	}
+?>
+
+<?php
+
+	//vastavalt vanusele trükime niimitu korda välja sõna ""palju""
+	
+	for($i=0;$i < $age; $i++) {
+		
+		//tegevus mis kordub
+		echo "Palju ".$i." ";
+		
+		
+	}
+	
+	echo "õnne!";
 ?>
