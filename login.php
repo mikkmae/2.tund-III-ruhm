@@ -22,6 +22,13 @@
 				$pw_error = "See väli on kohustuslik";
 				
 				
+			} else {
+				
+				//parool ei ole tühi ja kontrollime mitu tähemärki on
+				if(strlen($_POST["password"]) < 8 ) {
+					$pw_error = "Parool peab olema vähemalt 8 tähemärki pikk!";
+				}
+				
 			}
 		}
 
@@ -34,8 +41,8 @@
 	<h2>Login peidž</h2>
 	
 	<form action="login.php" method="post" >
-		<input type="email" name="email" placeholder="E-post"><?php echo $email_error;  ?> <br><br>
-		<input type="password" name="password" placeholder="Parool"><?php echo $pw_error;  ?> <br><br>
+		<input type="email" name="email" placeholder="E-post"> <?php  echo $email_error;  ?> <br><br>
+		<input type="password" name="password" placeholder="Parool"> <?php  echo $pw_error;  ?> <br><br>
 		<input type="submit" value="Log in"> <br><br>
 	</form>
 	
